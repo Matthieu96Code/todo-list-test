@@ -19,8 +19,8 @@ firstStart();
 // Add a task
 
 document.getElementById('add-btn').addEventListener('click', () => {
-  const taskListStore = getList();
-  addTaskArray(taskListStore);
+  const inputText = document.getElementById('task-input')
+  addTaskArray(inputText.value);
   sort();
 });
 
