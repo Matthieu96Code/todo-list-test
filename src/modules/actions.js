@@ -1,7 +1,7 @@
 /* eslint-disable no-param-reassign */
 
 import populate from './injectHtml';
-import localStorage from '../__mocks__/localstorage';
+// import localStorage from '../__mocks__/localstorage';
 
 // Save and get list function
 const save = (taskList) => localStorage.setItem('taskListArray', JSON.stringify(taskList));
@@ -10,7 +10,7 @@ const getList = () => {
     return [];
   }
   return JSON.parse(localStorage.getItem('taskListArray'));
-} 
+};
 
 // sort array function
 const sort = () => {
@@ -89,9 +89,9 @@ const deselect = () => {
 const add = (num1, num2) => num1 + num2;
 
 const domsuit = () => {
-  const doc = document.getElementById('task-input').value
+  const doc = document.getElementById('task-input').value;
   return doc;
-}
+};
 
 export {
   addTaskArray, removeTaskArray, save, getList, sort, editTask, delAppear, deselect, add, domsuit,

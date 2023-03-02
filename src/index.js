@@ -19,7 +19,7 @@ firstStart();
 // Add a task
 
 document.getElementById('add-btn').addEventListener('click', () => {
-  const inputText = document.getElementById('task-input')
+  const inputText = document.getElementById('task-input');
   addTaskArray(inputText.value);
   sort();
 });
